@@ -1,19 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const t = translations[language].contact;
+
   return (
     <section className="py-20 px-4 bg-gradient-dark">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Let's Connect
+              {t.title}
             </span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            I'm always open to discussing new projects and opportunities
+            {t.subtitle}
           </p>
         </div>
 
@@ -28,7 +33,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">Email</h3>
+                  <h3 className="font-semibold text-foreground">{t.email}</h3>
                   <p className="text-sm text-muted-foreground">your.email@example.com</p>
                 </div>
               </a>
@@ -43,7 +48,7 @@ const Contact = () => {
                   <Github className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">GitHub</h3>
+                  <h3 className="font-semibold text-foreground">{t.github}</h3>
                   <p className="text-sm text-muted-foreground">@yourusername</p>
                 </div>
               </a>
@@ -58,7 +63,7 @@ const Contact = () => {
                   <Linkedin className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">LinkedIn</h3>
+                  <h3 className="font-semibold text-foreground">{t.linkedin}</h3>
                   <p className="text-sm text-muted-foreground">@yourusername</p>
                 </div>
               </a>
@@ -73,7 +78,7 @@ const Contact = () => {
                   <Twitter className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground">Twitter</h3>
+                  <h3 className="font-semibold text-foreground">{t.twitter}</h3>
                   <p className="text-sm text-muted-foreground">@yourusername</p>
                 </div>
               </a>
@@ -81,7 +86,7 @@ const Contact = () => {
 
             <div className="mt-8 text-center">
               <Button size="lg" className="shadow-glow">
-                Download Resume
+                {t.downloadResume}
               </Button>
             </div>
           </CardContent>

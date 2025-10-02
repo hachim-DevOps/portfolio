@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Server, Cloud, Container, GitBranch, Shield, Workflow } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 
-const skills = [
+const skillsData = [
   {
     icon: Cloud,
     title: "Cloud Platforms",
@@ -35,17 +37,53 @@ const skills = [
 ];
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const t = translations[language].skills;
+
+  const skills = [
+    {
+      icon: Cloud,
+      title: t.cloudPlatforms,
+      items: ["AWS", "Azure", "Google Cloud", "DigitalOcean"],
+    },
+    {
+      icon: Container,
+      title: t.containerization,
+      items: ["Docker", "Kubernetes", "Helm", "Docker Compose"],
+    },
+    {
+      icon: GitBranch,
+      title: t.cicd,
+      items: ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD"],
+    },
+    {
+      icon: Workflow,
+      title: t.iac,
+      items: ["Terraform", "Ansible", "CloudFormation", "Pulumi"],
+    },
+    {
+      icon: Server,
+      title: t.monitoring,
+      items: ["Prometheus", "Grafana", "ELK Stack", "Datadog"],
+    },
+    {
+      icon: Shield,
+      title: t.security,
+      items: ["Vault", "SonarQube", "Trivy", "OWASP"],
+    },
+  ];
+
   return (
     <section className="py-20 px-4 bg-gradient-dark">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Skills & Technologies
+              {t.title}
             </span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Tools and platforms I work with daily
+            {t.subtitle}
           </p>
         </div>
 

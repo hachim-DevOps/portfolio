@@ -12,10 +12,10 @@ const LanguageSelector = () => {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="fixed top-6 right-6 z-50">
+    <div className="fixed top-6 right-6 z-50 flex items-center gap-2">
+      <Languages className="w-4 h-4 text-muted-foreground" />
       <Select value={language} onValueChange={(value: 'en' | 'fr') => setLanguage(value)}>
-        <SelectTrigger className="w-[140px] bg-card/80 backdrop-blur-sm border-border shadow-lg">
-          <Languages className="w-4 h-4 mr-2" />
+        <SelectTrigger className="w-[120px] bg-card/80 backdrop-blur-sm border-border shadow-lg">
           <SelectValue />
         </SelectTrigger>
         <SelectContent>

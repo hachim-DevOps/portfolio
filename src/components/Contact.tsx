@@ -26,7 +26,7 @@ const Contact = () => {
           <CardContent className="p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:hachim.assoumani@hotmail.com"
                 className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group"
               >
                 <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:animate-glow">
@@ -34,12 +34,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">{t.email}</h3>
-                  <p className="text-sm text-muted-foreground">your.email@example.com</p>
+                  <p className="text-sm text-muted-foreground">hachim.assoumani@hotmail.com</p>
                 </div>
               </a>
 
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/hachim-DevOps"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group"
@@ -49,12 +49,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">{t.github}</h3>
-                  <p className="text-sm text-muted-foreground">@yourusername</p>
+                  <p className="text-sm text-muted-foreground">@hachim-DevOps</p>
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/hachim-assoumani-957168293/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group"
@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">{t.linkedin}</h3>
-                  <p className="text-sm text-muted-foreground">@yourusername</p>
+                  <p className="text-sm text-muted-foreground">hachim ASSOUMANI</p>
                 </div>
               </a>
 

@@ -22,7 +22,7 @@ export const translations = {
       title: "Featured Projects",
       subtitle: "A showcase of my recent DevOps implementations",
       code: "Code",
-      demo: "Demo",
+      demo: "Overview, architecture, technologies, Results & Impact",
       project1: {
         title: "Kubernetes Multi-Cluster Management",
         description: "Automated deployment and management system for multiple Kubernetes clusters across different cloud providers using ArgoCD and Terraform."
@@ -84,7 +84,7 @@ export const translations = {
       title: "Projets Principaux",
       subtitle: "Une vitrine de mes récentes implémentations DevOps",
       code: "Code",
-      demo: "Démo",
+      demo: "Vue d'ensemble, architecture, technologies, Résultats & Impact",
       project1: {
         title: "Gestion Multi-Cluster Kubernetes",
         description: "Système de déploiement et de gestion automatisé pour plusieurs clusters Kubernetes sur différents fournisseurs cloud utilisant ArgoCD et Terraform."

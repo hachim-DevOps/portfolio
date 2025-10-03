@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
@@ -11,6 +12,7 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "project-1",
       title: t.project1.title,
       description: t.project1.description,
       tags: ["Kubernetes", "ArgoCD", "Terraform", "AWS"],
@@ -18,6 +20,7 @@ const Projects = () => {
       live: "#",
     },
     {
+      id: "project-2",
       title: t.project2.title,
       description: t.project2.description,
       tags: ["GitLab CI", "Jenkins", "Docker", "Ansible"],
@@ -25,6 +28,7 @@ const Projects = () => {
       live: "#",
     },
     {
+      id: "project-3",
       title: t.project3.title,
       description: t.project3.description,
       tags: ["Prometheus", "Grafana", "Node Exporter", "AlertManager"],
@@ -32,6 +36,7 @@ const Projects = () => {
       live: "#",
     },
     {
+      id: "project-4",
       title: t.project4.title,
       description: t.project4.description,
       tags: ["AWS Lambda", "API Gateway", "DynamoDB", "CloudFormation"],
@@ -39,6 +44,7 @@ const Projects = () => {
       live: "#",
     },
     {
+      id: "project-5",
       title: t.project5.title,
       description: t.project5.description,
       tags: ["Trivy", "SonarQube", "OWASP", "Vault"],
@@ -46,6 +52,7 @@ const Projects = () => {
       live: "#",
     },
     {
+      id: "project-6",
       title: t.project6.title,
       description: t.project6.description,
       tags: ["Elasticsearch", "Logstash", "Kibana", "Filebeat"],
@@ -94,10 +101,12 @@ const Projects = () => {
                     <Github className="w-4 h-4" />
                     {t.code}
                   </Button>
-                  <Button size="sm" className="gap-2 flex-1">
-                    <ExternalLink className="w-4 h-4" />
-                    {t.demo}
-                  </Button>
+                  <Link to={`/documentation/${project.id}`} className="flex-1">
+                    <Button size="sm" className="gap-2 w-full">
+                      <ExternalLink className="w-4 h-4" />
+                      {t.demo}
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

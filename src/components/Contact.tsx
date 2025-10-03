@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
@@ -65,21 +65,6 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground">{t.linkedin}</h3>
                   <p className="text-sm text-muted-foreground">hachim ASSOUMANI</p>
-                </div>
-              </a>
-
-              <a
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center group-hover:animate-glow">
-                  <Twitter className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">{t.twitter}</h3>
-                  <p className="text-sm text-muted-foreground">@yourusername</p>
                 </div>
               </a>
             </div>

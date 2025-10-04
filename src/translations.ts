@@ -59,6 +59,38 @@ export const translations = {
     },
     footer: {
       copyright: "DevOps Portfolio. Built with React & Tailwind CSS."
+    },
+    documentation: {
+      returnToPortfolio: "Return to Portfolio",
+      overview: "Overview",
+      architecture: "Architecture",
+      technologies: "Technologies",
+      results: "Results",
+      previousProject: "Previous Project",
+      nextProject: "Next Project",
+      contact: "Contact",
+      context: "Context",
+      objectives: "Objectives",
+      technicalChallenges: "Technical Challenges",
+      timeline: "Timeline & Team",
+      duration: "Duration",
+      startDate: "Start Date",
+      endDate: "End Date",
+      teamRoles: "Team Roles",
+      infrastructure: "Infrastructure",
+      kubernetesOrchestration: "Kubernetes Orchestration",
+      observability: "Observability",
+      devopsPipeline: "DevOps Pipeline",
+      iac: "Infrastructure as Code",
+      cicdGitOps: "CI/CD & GitOps",
+      securityTools: "Security",
+      resultsImpact: "Results & Impact",
+      metrics: "Key Metrics",
+      benefits: "Benefits",
+      technicalValue: "Technical Value",
+      keyLearnings: "Key Learnings",
+      technicalLearnings: "Technical Learnings",
+      methodologicalLearnings: "Methodological Learnings"
     }
   },
   fr: {
@@ -121,6 +153,38 @@ export const translations = {
     },
     footer: {
       copyright: "Portfolio DevOps. Créé avec React & Tailwind CSS."
+    },
+    documentation: {
+      returnToPortfolio: "Retour au Portfolio",
+      overview: "Vue d'ensemble",
+      architecture: "Architecture",
+      technologies: "Technologies",
+      results: "Résultats",
+      previousProject: "Projet Précédent",
+      nextProject: "Projet Suivant",
+      contact: "Contact",
+      context: "Contexte",
+      objectives: "Objectifs",
+      technicalChallenges: "Défis Techniques",
+      timeline: "Timeline & Équipe",
+      duration: "Durée",
+      startDate: "Date de Début",
+      endDate: "Date de Fin",
+      teamRoles: "Rôles de l'Équipe",
+      infrastructure: "Infrastructure",
+      kubernetesOrchestration: "Orchestration Kubernetes",
+      observability: "Observabilité",
+      devopsPipeline: "Pipeline DevOps",
+      iac: "Infrastructure as Code",
+      cicdGitOps: "CI/CD & GitOps",
+      securityTools: "Sécurité",
+      resultsImpact: "Résultats & Impact",
+      metrics: "Métriques Clés",
+      benefits: "Bénéfices",
+      technicalValue: "Valeur Technique",
+      keyLearnings: "Apprentissages Clés",
+      technicalLearnings: "Apprentissages Techniques",
+      methodologicalLearnings: "Apprentissages Méthodologiques"
     }
   }
 };
